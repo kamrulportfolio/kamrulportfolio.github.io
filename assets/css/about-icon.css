@@ -1,0 +1,36 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 14/03/2018 15:37
+  	*/
+
+@font-face {
+  font-family: "AboutIcon";
+  src: url("../fonts/about-icon.eot");
+  src: url("../fonts/about-icon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/about-icon.woff") format("woff"),
+       url("../fonts/about-icon.ttf") format("truetype"),
+       url("../fonts/about-icon.svg#AboutIcon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel- ratio:0) {
+  @font-face {
+    font-family: "AboutIcon";
+    src: url("../fonts/about-icon.svg#AboutIcon") format("svg");
+  }
+}
+
+[class^="about-icon-"]:before, [class*=" about-icon-"]:before,
+[class^="about-icon-"]:after, [class*=" about-icon-"]:after {   
+  font-family: AboutIcon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.about-icon-youtube:before { content: "\f100"; }
+.about-icon-dribble-logo:before { content: "\f101"; }
+.about-icon-freepik-logo:before { content: "\f102"; }
+.about-icon-envato:before { content: "\f103"; }
+.about-icon-fiverr:before { content: "\f104"; }

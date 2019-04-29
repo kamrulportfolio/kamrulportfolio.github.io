@@ -1,0 +1,2465 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    HTML Landing Page Design
+Version:    1.0
+Last change:   15/03/18 [fixed Float bug, vf]
+Author Name:   Md Mehedi Hasan Kamrul
+Primary use:   PSD TO HTML 
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+(1)-PORTFOLIO HOMEPAGE
+1. header-area
+2. about-area
+3. service-area
+4. portfolio-area
+5. testimonial-area
+6. pricing-area
+7. footer-top-area
+8. footer-bottom-area
+9. scroll-to-top
+
+(2)-BLOG LIST VIEW PAGE
+1. blog-header-area
+2. blog-top-area
+3. blog-gray-area
+4. blog-area
+5. blog-grid-view-section
+6. search-bar
+7. catagories-section
+8. popular-post-section"
+9. tags-section
+10. footer-top-area
+11. footer-bottom-area
+12. scroll-to-top
+
+(23)-BLOG GRID VIEW PAGE
+1. blog-header-area
+2. blog-top-area
+3. blog-gray-area
+4. blog-area
+5. blog-grid-view-section
+6. footer-top-area
+7. footer-bottom-area
+8. scroll-to-top
+
+(23)-BLOG DETAILS PAGE
+1. blog-header-area
+2. blog-top-area
+3. blog-gray-area
+4. blog-details-page-area
+5. blog-special-section
+6. comments-section
+7. contact-form
+8. search-bar
+9. catagories-section
+10. popular-post-section
+11. tags-section
+12. footer-top-area
+13. footer-bottom-area
+14. scroll-to-top
+
+
+-------------------------------------------------------------------*/
+
+
+/*
+==========================================
+Base CSS 
+==========================================
+*/
+
+/*
+==========================================
+Google Fonts
+==========================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans:600|Open+Sans:400,400i,600,700|Roboto:400,400i,500i');
+Josefin+Sans:600|Roboto:400i,500i
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+p{
+	font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+	font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	background: #282828;
+}
+a:hover { text-decoration: none }
+.section-padding{padding: 80px 0;}
+
+html, body {
+  height: 100%;
+}
+
+/*
+==========================================
+preloader css start
+==========================================
+*/
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+.site-preloader-wrap {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  z-index: 99;
+}
+.site-preloader-wrap .spinner {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.site-preloader-wrap .spinner .rect2, .site-preloader-wrap .spinner .rect3, .site-preloader-wrap .spinner .rect4, .site-preloader-wrap .spinner .rect5 {
+  background-color: #D6C6B2;
+}
+
+/*
+==========================================
+preloader css end
+==========================================
+*/
+
+
+/*
+==========================================
+header-area css start
+==========================================
+*/
+
+.logo {
+	margin-top: 30px;
+}
+.section-padding{
+	padding: 100px 0;
+}
+.responsive-menu-wrap {
+	display: none;
+}
+.main-menu {
+  float: right;
+}
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+.main-menu ul li {
+  float: left;
+}
+.main-menu ul li a {
+	display: inline-block;
+	padding: 20px;
+	padding-top: 60px;
+	font-weight: 600;
+	font-size: 20px;
+	transition: .3s;
+	padding-bottom: 10px;
+	color: #fff;
+	line-height: 20px;
+}
+.main-menu li a:hover, .main-menu li a.active {
+  background: #d6c6b2;
+  color: #222;
+}
+
+.header-area, .header-area a {
+  color: #222;
+  font-size: 20px;
+}
+
+/*
+==========================================
+dropdown-menu css start
+==========================================
+*/
+
+.main-menu ul li {
+  position: relative;
+  
+}
+.main-menu ul li ul {
+  position: absolute;
+  left: 0;
+  top: 120px;
+  width: 200px;
+  background: #222;
+  z-index: 66;
+  text-align: left;
+  opacity: 0;
+  transition: .3s;
+  visibility: hidden;
+}
+.main-menu ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  top: 90px
+}
+
+.main-menu ul li ul li {
+  float: left;
+  width: 200px;
+    
+}
+.main-menu ul li ul a {
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*
+==========================================
+dropdown-menu css end
+==========================================
+*/
+
+/*
+==========================================
+sticky css start
+==========================================
+*/
+
+.header-area.sticky {
+	background: #333;
+	position: fixed;
+	z-index: 99;
+}
+.sticky .main-menu ul li a{
+	padding-top: 40px;
+}
+.sticky .logo {
+	margin-top: 20px;
+	transition: .3s;
+	margin-bottom: 10px;
+}
+.sticky .logo img {
+	max-width: 150px;
+}
+.sticky .main-menu ul li ul a {
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.sticky .main-menu ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  top: 70px
+}
+/*
+==========================================
+sticky css end 
+==========================================
+*/
+/*
+==========================================
+header-area css end
+==========================================
+*/
+
+/*
+==========================================
+slider-area css start
+==========================================
+*/
+
+.homepage-slider-area {
+  height: 100%;
+  background: #08080c;
+  position: relative;
+}
+.homepage-slider-area div {
+  height: 100%;
+}
+.single-slider-area img {
+	position: absolute;
+	left: 0;
+	width: 700px;
+	bottom: 0;
+	margin-left: 150px;
+	z-index: 2;
+}
+.slider-text {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.slider-inner-text {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 18%;
+}
+
+.header-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.slider-info {
+  position: relative;
+  color: #fff;
+}
+.slider-info h4 {
+	font-size: 20px;
+	margin-top: 100px;
+	font-weight: 400;
+}
+.slider-info h1 {
+	font-size: 102px;
+	text-transform: uppercase;
+	margin: 0;
+	position: relative;
+	line-height: 90px;
+	margin-bottom: 20px;
+}
+.slider-info h2 {
+	font-size: 85px;
+	margin: 0;
+	position: relative;
+	z-index: 3;
+	line-height: 70px;
+}
+.slide-btn {
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	padding: 14px 25px;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-left: 30px;
+	transition: .3s;
+	position: relative;
+	z-index: 4;
+}
+.slide-btn:hover{
+	background: #d6c6b2;
+	color: #333;
+}
+.slide-btn.active{
+	background: #d6c6b2;
+	color: #333;
+}
+/*
+==========================================
+slider-area css end
+==========================================
+*/
+
+/*
+==========================================
+about-area css start
+==========================================
+*/
+.about-text {
+  color: #fff;
+  line-height: 1.7;
+}
+.about-title h2 {
+	font-size: 32px;
+	margin-bottom: 60px;
+	color: #d6c6b2;
+}
+.about-text p {
+	margin: 0;
+}
+.hire-me h3 {
+	margin-top: 60px;
+	color: #d6c6b2;
+	margin-bottom: 30px;
+}
+.social-icon-section a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  font-size: 13px;
+  line-height: 50px;
+  color: #fff;
+  border: 1px solid;
+  margin-right: 15px;
+  border-radius: 50%;
+  text-align: center;
+  transition: .3s;
+}
+.social-icon-section a i::before {
+	margin: 0;
+	font-size: 16px;
+}
+.social-icon-section a:hover {
+  background: #d6c6b2;
+  border-color: #d6c6b2;
+  color: #222;
+}
+
+/*
+==========================================
+about-area triangle shape css start
+==========================================
+*/
+
+.about-img .triangle-one {
+	background-color: #d6c6b2;
+	text-align: left;
+}
+.about-img .triangle-one:before,
+.about-img .triangle-one:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.about-img .triangle-one, .triangle-one::before, .triangle-one::after {
+	width: 23em;
+	height: 23em;
+	border-top-right-radius: 30%;
+}
+
+.about-img .triangle-one {
+	transform: rotate(-89deg) skewX(-30deg) scale(1,.866);
+	position: absolute;
+	top: 31px;
+	z-index: 2;
+}
+.about-img .triangle-one:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.about-img .triangle-one:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+
+/*
+==========================================
+about-area triangle shape css end
+==========================================
+*/
+
+.about-img img {
+	position: relative;
+	z-index: 3;
+	height: 560px;
+}
+/*
+==========================================
+about-area css end
+==========================================
+*/
+
+/*
+==========================================
+service-area css start
+==========================================
+*/
+
+.service-area{
+	background: rgb(22,22,22);
+	background: -moz-linear-gradient(left,  rgba(22,22,22,1) 1%, rgba(46,46,54,1) 50%, rgba(21,21,21,1) 100%, rgba(32,124,202,1) 100%);
+	background: -webkit-linear-gradient(left,  rgba(22,22,22,1) 1%,rgba(46,46,54,1) 50%,rgba(21,21,21,1) 100%,rgba(32,124,202,1) 100%);
+	background: linear-gradient(to right,  rgba(22,22,22,1) 1%,rgba(46,46,54,1) 50%,rgba(21,21,21,1) 100%,rgba(32,124,202,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161616', endColorstr='#207cca',GradientType=1 );
+
+}
+
+.service-area {
+  color: #fff;
+  padding-bottom: 60px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #d6c6b2;
+  margin-top: 60px;
+}
+.section-title h2 {
+	font-size: 32px;
+	margin: 0;
+}
+.single-service-item {
+  text-align: center;
+  line-height: 1.9;
+  padding: 16px;
+}
+.single-service-item p {
+  color: #cccccc;
+  margin: 0;
+}
+.single-service-item h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	margin-bottom: 27px;
+	transition: .3s;
+	font-size: 20px;
+}
+.single-service-item:hover.single-service-item h3 {
+  color: #d6c6b2;
+}
+.service-icon {
+  max-width: 50px;
+  display: inline-block;
+}
+.service-icon a {
+	display: inline-block;
+	margin-bottom: 60px;
+}
+.service-icon img {
+	height: 50px;
+    width: 50px;
+	position: relative;
+	z-index: 3;
+}
+/*
+==========================================
+service-area triangle shape css start
+==========================================
+*/
+
+.service-icon .triangle-two {
+	background-color: #d6c6b2;
+	text-align: left;
+}
+.service-icon .triangle-two:before,
+.service-icon .triangle-two:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.service-icon .triangle-two, .triangle-two::before, .triangle-two::after {
+	width: 4em;
+	height: 4em;
+	border-top-right-radius: 30%;
+}
+
+.service-icon .triangle-two {
+	transform: rotate(-89deg) skewX(-30deg) scale(1,.866);
+	position: absolute;
+	top: 14px;
+	z-index: 2;
+	left: 39%;
+}
+.service-icon .triangle-two:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.service-icon .triangle-two:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+
+/*
+==========================================
+service-area triangle shape css end
+==========================================
+*/
+
+/*
+==========================================
+service-area owl-carousel css start
+==========================================
+*/
+
+.service-area-section .owl-nav div {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #fff;
+  line-height: 25px;
+  text-align: center;
+  margin-right: 30px;
+  border-radius: 50%;
+  transition: .3s;
+  font-size: 30px;
+}
+.service-area-section .owl-nav div:hover , .service-area-section .owl-nav .owl-prev {
+  background: #d6c6b2;
+}
+.service-area-section .owl-nav{
+	text-align: center;
+	margin-top: 20px;
+}
+.service-area-section .owl-nav .owl-prev i.fa {
+	margin-left: -33px;
+}
+.service-area-section .owl-nav .owl-next i.fa {
+	margin-left: 15px;
+}
+/*
+==========================================
+service-area owl-carousel css end
+==========================================
+*/
+
+/*
+==========================================
+service-area css end
+==========================================
+*/
+
+/*
+==========================================
+portfolio-area css start
+==========================================
+*/
+
+.only-for-mobile{display: none;}
+.single-portfolio-item {
+  width: 46%;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.single-portfolio-item img {
+	height: 450px;
+	width: 350px;
+}
+.portfolio-bg-1{background-image: url(../img/portfolio-img/portfolio-1.jpg);}
+.portfolio-bg-2{background-image: url(../img/portfolio-img/portfolio-2.jpg);}
+.portfolio-bg-3{background-image: url(../img/portfolio-img/portfolio-3.jpg);}
+.portfolio-bg-4{background-image: url(../img/portfolio-img/portfolio-4.jpg);}
+.portfolio-bg-5{background-image: url(../img/blog-img/blog-1.jpg);}
+.portfolio-bg-6{background-image: url(../img/blog-img/blog-2.jpg);}
+.portfolio-bg-7{background-image: url(../img/blog-img/blog-3.jpg);}
+.portfolio-bg-8{background-image: url(../img/blog-img/blog-4.jpg);}
+.portfolio-bg-9{background-image: url(../img/blog-imgg/blog-5.jpg);}
+.portfolio-bg-10{background-image: url(../img/blog-img/blog-6.jpg);}
+.portfolio-bg{
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  height: 100%;
+}
+.single-portfolio-item::after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: #dcc6a8;
+	opacity: 0;
+	transition: .5s;
+    transform: scale(0);
+
+}
+.single-portfolio-item:hover::after{
+	opacity: .89;
+	transform: scale(1);
+}
+.portfolio-bottom-info {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	transition: .3s;
+	transform: scale(0);
+	opacity: 0;
+}
+.single-portfolio-item:hover .portfolio-bottom-info{
+	opacity: 1;
+	transform: scale(1);
+}
+.portfolio-bottom-info h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.portfolio-bottom-info span {
+  font-size: 16px;
+  font-weight: 600;
+}
+.portfolio-hover a {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+}
+.portfolio-hover a i.fa {
+  height: 50px;
+  width: 50px;
+  background: #444444;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  transition: .3s;
+  transform: scale(2);
+  opacity: 0;
+  visibility: visible
+}
+.single-portfolio-item:hover .portfolio-hover a i.fa{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);	
+}
+
+
+.portfolio-title h2 {
+	font-size: 32px;
+	margin-bottom: 60px;
+	color: #d6c6b2;
+	line-height: 32px;
+}
+.portfolio-mainmenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.portfolio-mainmenu li {
+	margin-bottom: 40px;
+	font-size: 20px;
+	color: #fff;
+	line-height: 20px;
+}
+.portfolio-mainmenu li a{
+  color: #fff;
+  display: inline-block;
+  transition: .3s;	
+}
+.portfolio-mainmenu li a:hover {
+	margin-left: 20px;
+	color: #d6c6b2;
+}
+.browse-all-btn {
+	text-align: center;
+	margin-top: 40px;
+}
+.browse-all {
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #222;
+	background: #d6c6b2;
+	padding: 15px 20px;
+	font-weight: 600;
+	line-height: 16px;
+	transition: .3s;
+}
+.browse-all:hover{
+	color: #d6c6b2;
+	background: #222;
+}
+/*
+==========================================
+portfolio-area css end
+==========================================
+*/
+/*
+==========================================
+testimonial-area-area css start
+==========================================
+*/
+
+.testimonial-area-bg {
+	background-image: url(../img/testimonial-bg.jpg);
+	position: fixed;
+	background-size: cover;
+	background-position: center top;
+	background-color: #333;
+	position: relative;
+	z-index: 1;
+	background-attachment: fixed;
+}
+.testimonial-area {
+	padding-bottom: 60px;
+}
+.testimonial-area-bg:after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #010105;
+  opacity: .7;
+}
+.testimonial-title h2 {
+	font-size: 32px;
+	color: #d6c6b2;
+	position: relative;
+	z-index: 3;
+	margin: 0;
+	line-height: 32px;
+}
+.testimonial-title{
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.team-info {
+  color: #fff;
+  font-size: 16px;
+}
+.team-member h4 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+.team-member span {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.team-rating a {
+  display: inline-block;
+  color: #fff;
+  margin-right: 5px;
+}
+.team-rating {
+  margin-bottom: 30px;
+}
+.team-img img {
+	float: left;
+	margin-right: 50px;
+	position: relative;
+	z-index: 3;
+	clip-path: polygon(7% 104%, 104% 66%, -7% -100%);
+	margin-top: -1px;
+	height: 220px;
+	max-width: 150px;
+}
+.team-des p {
+	margin: 0;
+	padding-right: 23px;
+	font-size: 16px;
+}
+/*
+==========================================
+testimonial-area triangle shape css start
+==========================================
+*/
+
+.team-img .triangle-three {
+	background-color: #d6c6b2;
+	text-align: left;
+}
+.team-img .triangle-three:before,
+.team-img .triangle-three:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.team-img .triangle-three, .triangle-three::before, .triangle-three::after {
+	width: 8em;
+	height: 8em;
+	border-top-right-radius: 30%;
+}
+
+.team-img .triangle-three {
+	transform: rotate(-89deg) skewX(-30deg) scale(1,.866);
+	position: absolute;
+	top: 36px;
+	z-index: 2;
+	left: -6px;
+}
+.team-img .triangle-three:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.team-img .triangle-three:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+/*
+==========================================
+testimonial-area triangle shape css end
+==========================================
+*/
+
+/*
+==========================================
+service-area owl-carousel css start
+==========================================
+*/
+
+.team-section .owl-nav div {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #fff;
+  line-height: 25px;
+  text-align: center;
+  margin-right: 30px;
+  border-radius: 50%;
+  transition: .3s;
+  font-size: 30px;
+  color: #fff;
+}
+.team-section .owl-nav div:hover {
+  background: #d6c6b2;
+}
+.team-section .owl-nav .owl-prev {
+  background: #d6c6b2;
+}
+.team-section .owl-nav {
+	text-align: center;
+	margin-top: 60px;
+}
+.team-section .owl-nav .owl-prev i.fa {
+	margin-left: -33px;
+}
+.team-section .owl-nav .owl-next i.fa {
+	margin-left: 15px;
+}
+/*
+==========================================
+team-area owl-carousel css end
+==========================================
+*/
+
+/*
+==========================================
+testimonial-area-area css end
+==========================================
+*/
+
+/*
+==========================================
+pricing-area-area css start
+==========================================
+*/
+
+.pricing-area, .pricing-area a {
+  color: #fff;
+}
+.pricing-section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.pricing-section-title h2 {
+	font-size: 32px;
+	color: #ccb9a1;
+	margin: 0;
+	line-height: 32px;
+}
+.single-pricing-box {
+  text-align: center;
+  background: #333333;
+  transition: .3s;	
+}
+.pricing-title {
+  background: #d6c6b2;
+  color: #222;
+  padding: 20px;
+  transition: .3s;	
+}
+.pricing-title h4 {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	font-weight: 700;
+	line-height: 20px;
+}
+.pricing-bottom-info {
+	padding: 0 70px;
+}
+.pricing-top {
+	padding: 20px;
+	border-bottom: 1px solid #444240;
+	margin-bottom: 30px;
+}
+.pricing-top h1 {
+	margin: 0;
+	font-size: 60px;
+	margin-top: 48px;
+	transition: .3s;
+}
+.pricing-top h1 span {
+  font-size: 24px;
+}
+.pricing-top h1 span.doller {
+	font-size: 60px;
+	margin-right: 20px;
+}
+.pricing-mainmenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pricing-mainmenu li {
+	margin-bottom: 30px;
+	transition: .3s;
+}
+.purchase-now-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  border: 1px solid;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  transition: .3s;	
+}
+.pricing-icon img {
+	position: relative;
+	z-index: 3;
+}
+/*
+==========================================
+pricing-area triangle shape css start
+==========================================
+*/
+
+.pricing-icon .triangle-four {
+	background-color: #fff;
+	text-align: left;
+	transition: .3s;
+}
+.pricing-icon .triangle-four:before,
+.pricing-icon .triangle-four:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.pricing-icon .triangle-four, .triangle-four::before, .triangle-four::after {
+	width: 4em;
+	height: 4em;
+	border-top-right-radius: 30%;
+}
+
+.pricing-icon .triangle-four {
+	transform: rotate(-89deg) skewX(-30deg) scale(1,.866);
+	position: absolute;
+	top: 97px;
+	z-index: 2;
+	left: 37%;
+}
+.pricing-icon .triangle-four:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.pricing-icon .triangle-four:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+/*
+==========================================
+pricing-area triangle shape css end
+==========================================
+*/
+
+.single-pricing-box:hover .purchase-now-btn{
+  background: #d6c6b2;
+  color: #222;
+  box-shadow: 0px 0px 10px #c9b59d;
+  border-color: #d6c6b2;
+}
+
+.single-pricing-box:hover .pricing-title {
+  box-shadow: 0px 3px 5px 0px #ccb9a1;
+}
+.single-pricing-box:hover {
+  background: #d6c6b2;
+}
+.single-pricing-box:hover .pricing-top {
+	border-bottom: 1px solid #c7b9a7;
+}
+.single-pricing-box:hover .pricing-top h1{
+	color: #222;
+}
+.single-pricing-box:hover .pricing-mainmenu li{
+	color: #444;
+	font-weight: 300;
+} 
+.single-pricing-box:hover .pricing-icon .triangle-four {
+	background: #deccb6;
+}
+/*
+==========================================
+pricing-area-area css end
+==========================================
+*/
+
+/*
+==========================================
+blog-area-area css start
+==========================================
+*/
+
+.blog-area {
+	background: #333333;
+	padding-bottom: 60px;
+}
+/*
+==========================================
+blog-section all background
+==========================================
+*/
+
+.blog-bg-1{background-image: url(../img/blog-img/blog-1.jpg)}
+.blog-bg-2{background-image: url(../img/blog-img/blog-2.jpg)}
+.blog-bg-3{background-image: url(../img/blog-img/blog-6.jpg)}
+.blog-bg-4{background-image: url(../img/blog-img/blog-7.jpg)}
+
+.blog-box-bg-1{background-image:url(../img/blog-img/blog-2.jpg);}
+.blog-box-bg-2{background-image:url(../img/blog-img/blog-1.jpg);}
+.blog-box-bg-3{background-image:url(../img/blog-img/blog-3.jpg);}
+.blog-box-bg-4{background-image:url(../img/blog-img/blog-4.jpg);}
+.blog-box-bg-5{background-image:url(../img/blog-img/blog-5.jpg);}
+.blog-box-bg-6{background-image:url(../img/blog-img/blog-6.jpg);}
+.blog-box-bg-7{background-image:url(../img/blog-img/blog-7.jpg);}
+.blog-box-bg-8{background-image:url(../img/blog-img/blog-8.jpg);}
+.blog-box-bg-9{background-image:url(../img/blog-img/blog-9.jpg);}
+
+/*
+==========================================
+blog-section all background
+==========================================
+*/
+
+.single-blog-item {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.blog-image {
+	height: 315px;
+	background-size: cover;
+	background-position: center;
+	width: 270px;
+	position: relative;
+	z-index: 1;
+	float: left;
+}
+.blog-image::after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: #d6c6b2;
+	transition: .3s;
+	opacity: 0;
+}
+.single-blog-item:hover .blog-image::after{
+	opacity: .7;
+}
+.blog-date {
+	position: absolute;
+	left: 234px;
+	z-index: 2;
+	margin-top: 30px;
+	transition: .3s;
+	opacity: 0;
+	visibility: hidden;
+}
+.single-blog-item:hover .blog-date{
+	opacity: 1;
+	visibility: visible;
+}
+.blog-date h4 {
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.blog-date h4 span {
+  display: block;
+}
+.blog-meta {
+	float: right;
+	max-width: 480px;
+	padding: 30px;
+	background: #282828;
+	height: 315px;
+}
+.blog-top-section {
+	margin-bottom: 30px;
+}
+.blog-icon, .blog-icon a {
+  color: #999999;
+}
+.blog-icon a i.fa {
+	margin-right: 5px;
+}
+.blog-right-section {
+	float: right;
+}
+.blog-right-section a {
+  margin-right: 15px;
+}
+.blog-meta h2 {
+	font-size: 20px;
+	color: #fff;
+	line-height: 1.5;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+	transition: .3s;
+	font-weight: 600;
+}
+.single-blog-item:hover .blog-meta h2{
+	color: #d6c6b2;
+}
+.blog-meta p {
+	color: #cccccc;
+	margin: 0;
+	line-height: 1.7;
+}
+.blog-bottom-section a {
+	color: #fff;
+	transition: .3s;
+}
+.single-blog-item:hover .blog-bottom-section a {
+	color: #d6c6b2;
+}
+.blog-bottom-section {
+	margin-top: 30px;
+}
+.blog-bottom-section a {
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.blog-bottom-section a.share-right {
+	float: right;
+	color: #999999;
+	transition: .3s;
+}
+.single-blog-item:hover .blog-bottom-section a.share-right {
+	color: #d6c6b2;
+}
+.blog-bottom-section a.share-right i.fa{
+	margin-right: 10px;
+}
+.blog-bottom-section a i.fa {
+	margin-left: 10px;
+}
+
+/*
+==========================================
+right-blog-section start
+==========================================
+*/
+
+.blog-box-bg {
+	background-position: center;
+	height: 340px;
+	background-size: cover;
+	background-color: #ddd;
+}
+
+.blog-box-content {
+	padding: 30px;
+	background: #282828;
+	height: 319px;
+	position: relative;
+	z-index: 1;
+}
+.blog-box-content::after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: #d6c6b2;
+	opacity: 0;
+	transition: .3s;
+}
+.single-blog-box:hover .blog-box-content::after{
+	opacity: 1;
+}
+.blog-top-section-right a {
+  color: #999999;
+  position: relative;
+  z-index: 2;
+}
+.single-blog-box:hover .blog-top-section-right a{
+	color: #666666;
+}
+.blog-top-section-right {
+  margin-bottom: 35px;
+}
+.blog-meta-right h2 {
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	margin-bottom: 14px;
+	transition: .3s;
+	position: relative;
+	z-index: 2;
+	line-height: 1.5;
+}
+.single-blog-box:hover .blog-meta-right h2{
+	color: #222;
+}
+.blog-meta-right p {
+	color: #cccccc;
+	font-size: 14px;
+	text-align: center;
+	margin: 0;
+	transform: .3s;
+	position: relative;
+	z-index: 2;
+}
+.single-blog-box:hover .blog-meta-right p{
+	color: #444;
+}
+.blog-right-sections {
+  float: right;
+}
+.blog-icon-right a i.fa {
+  margin-right: 6px;
+}
+.blog-bottom-section-right {
+	margin-top: 17px;
+}
+.blog-bottom-section-right a {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  transform: .3s;
+  position: relative;
+  z-index: 2;
+}
+.single-blog-box:hover .blog-bottom-section-right a{
+  color: #222;
+}
+.blog-bottom-section-right a i.fa{
+	margin-left: 10px;
+}
+.blog-bottom-section-right a.share-right-icon {
+  float: right;
+  color: #999999;
+  transition: .3s;
+  position: relative;
+  z-index: 2;
+}
+.single-blog-box:hover .blog-bottom-section-right a.share-right-icon{
+	color: #666;
+}
+.blog-bottom-section-right a.share-right-icon i.fa {
+  margin-right: 10px;
+}
+/*
+==========================================
+right-blog-section end
+==========================================
+*/
+
+/*
+==========================================
+blog-area css end
+==========================================
+*/
+
+/*
+==========================================
+footer-top-area css start
+==========================================
+*/
+
+.footer-top-area {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.footer-title h4 {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 33px;
+	line-height: 20px;
+}
+.footer-social-area a {
+	display: block;
+	margin-bottom: 20px;
+	color: #ccc;
+	font-size: 20px;
+	line-height: 20px;
+}
+.footer-social-area a:hover {
+	color: #D6C6B2;
+}
+.footer-social-area a i.fa {
+  font-size: 18px;
+  margin-right: 18px;
+}
+.follow-me {
+  margin-top: 60px;
+}
+.follow-me h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.follow-me-icon a {
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  transition: .3s;
+  display: inline-block;
+  border-radius: 50%;
+}
+.follow-me-icon a:hover {
+  background: #d6c6b2;
+}
+
+/*
+==========================================
+Contact Form CSS start
+==========================================
+*/
+
+.contact-form {
+  background: #333333;
+  padding: 30px;
+}
+.contact-form h4 {
+  font-size: 22px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.input-class {
+  width: 340px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.right-input {
+  float: right;
+  margin-right: 0;
+}
+.contact-form textarea {
+  width: 100%;
+  height: 150px;
+}
+.contact-form input[type="text"], input[type="email"], textarea {
+  background: #333;
+  border: 1px solid #666;
+  color: #666;
+  padding: 10px;
+  font-style: italic;
+}
+input[type]:focus {
+  border-color: #d6c6b2;
+}
+textarea:focus {
+  border-color: #d6c6b2;
+}
+.triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 70px solid #d6c6b2;
+	border-left: 70px solid transparent;
+}
+
+.message-area {
+  position: relative;
+  resize: none;
+}
+.triangle-bottomright {
+  position: absolute;
+  right: 46px;
+  top: 216px;
+}
+
+.send-icon {
+  position: absolute;
+  right: 58px;
+  font-size: 20px;
+  color: #222;
+  top: 248px;
+}
+.send-icon:hover {
+	color: #222;
+}
+/*
+==========================================
+Contact Form CSS end
+==========================================
+*/
+
+/*
+==========================================
+footer-top-area css end
+==========================================
+*/
+
+/*
+==========================================
+footer-bottom-area css start
+==========================================
+*/
+
+.footer-bottom-area {
+	background: #333333;
+	color: #cccccc;
+	padding: 20px;
+}
+.footer-bottom-area p {
+	margin: 0;
+}
+/*
+==========================================
+footer-bottom-area css end
+==========================================
+*/
+
+/*
+==========================================
+scroll to top css start
+==========================================
+*/
+
+.scroll-to-top {
+	position: fixed;
+	top: 84%;
+	right: 2%;
+	display: none;
+	z-index: 99;
+}
+.scroll-to-top a {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	color: #222;
+	background: #D6C6B2;
+	text-align: center;
+	line-height: 40px;
+	font-size: 30px;
+	border-radius: 50%;
+}
+/*
+==========================================
+scroll to top css end
+==========================================
+*/
+
+
+
+
+/*
+==========================================
+BLOG-GRID-VIEW CSS START
+==========================================
+*/
+
+/*
+==========================================
+blog-header-area css start
+==========================================
+*/
+
+.blog-header-area {
+	background: #040309;
+	height: 140px;
+}
+.blog-logo {
+	margin-top: 30px;
+}
+.section-padding{
+	padding: 100px 0;
+}
+.blog-main-menu {
+  float: right;
+}
+.blog-main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+.blog-main-menu ul li {
+  float: left;
+}
+.blog-main-menu ul li a {
+	display: inline-block;
+	padding: 20px;
+	padding-top: 60px;
+	font-weight: 600;
+	font-size: 20px;
+	transition: .3s;
+	padding-bottom: 10px;
+	color: #fff;
+	line-height: 20px;
+}
+.blog-main-menu li a:hover, .blog-main-menu li a.active {
+  background: #d6c6b2;
+  color: #222;
+}
+
+/*
+==========================================
+dropdown-menu css start
+==========================================
+*/
+
+.blog-main-menu ul li {
+  position: relative;
+  
+}
+.blog-main-menu ul li ul {
+  position: absolute;
+  left: 0;
+  top: 120px;
+  width: 200px;
+  background: #222;
+  z-index: 66;
+  text-align: left;
+  opacity: 0;
+  transition: .3s;
+  visibility: hidden;
+}
+.blog-main-menu ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  top: 90px
+}
+
+.blog-main-menu ul li ul li {
+  float: left;
+  width: 200px;
+    
+}
+.blog-main-menu ul li ul a {
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*
+==========================================
+dropdown-menu css end
+==========================================
+*/
+/*
+==========================================
+sticky css start
+==========================================
+*/
+
+.blog-header-area.sticky {
+	background: #040309;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	height: 95px;
+}
+.sticky .blog-main-menu ul li a{
+	padding-top: 40px;
+}
+.sticky .blog-logo {
+	margin-top: 20px;
+	transition: .3s;
+	margin-bottom: 10px;
+}
+.sticky .blog-logo img {
+	max-width: 150px;
+}
+.sticky .blog-main-menu ul li ul a {
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.sticky .blog-main-menu ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  top: 70px
+}
+/*
+==========================================
+sticky css end 
+==========================================
+*/
+
+/*
+==========================================
+blog-header-area css end
+==========================================
+*/
+
+/*
+==========================================
+blog-top css start
+==========================================
+*/
+
+.blog-top-right {
+  float: right;
+}
+.blog-top-left {
+  float: left;
+}
+.blog-top-area {
+  background: #333333;
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+}
+.blog-top-area p {
+  margin: 0;
+}
+.blog-top-area a {
+  color: #fff;
+  transition: .3s;
+}
+.blog-top-area a:hover {
+  color: #d6c6b2;
+}
+.blog-top-left i.fa {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.blog-top-right a i.fa {
+	margin-right: 12px;
+}
+/*
+==========================================
+blog-top css end
+==========================================
+*/
+
+/*
+==========================================
+blog-gray-area css start 
+==========================================
+*/
+
+.blog-gray-area {
+	height: 100px;
+}
+/*
+==========================================
+blog-gray-area css end 
+==========================================
+*/
+
+/*
+==========================================
+blog-part css start
+==========================================
+*/
+
+.blog-grid-area {
+	padding: 60px 0;
+	background: #333333;
+}
+.single-blog-grid-view-box {
+	margin-bottom: 60px;
+}
+.blog-grid-box-bg {
+
+	height: 340px;
+	background-size: cover;
+	background-position: center;
+	background-color: #ddd;
+	position: relative;
+	z-index: 1;
+}
+.blog-grid-box-bg:after{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: #d6c6b2;
+	transition: .3s;
+	opacity: 0;
+}
+.single-blog-grid-view-box:hover .blog-grid-box-bg:after{
+	opacity: .7;
+}
+
+.blog-grid-view-date h4 {
+	color: #fff;
+	position: absolute;
+	right: 30px;
+	z-index: 2;
+	top: 20px;
+	font-size: 24px;
+	transition: .3s;
+	opacity: 0;
+}
+.blog-grid-view-date h4 span {
+  display: block;
+}
+.single-blog-grid-view-box:hover .blog-grid-view-date h4{
+	opacity: 1;
+}
+/*
+==========================================
+blog-part css end
+==========================================
+*/
+
+/*
+==========================================
+blog-pagination css start
+==========================================
+*/
+
+.blog-pagination .pagination {
+	 margin: 0;
+}
+.blog-pagination .pagination > li:first-child > a, .pagination > li:first-child > span {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	text-transform: none;
+	cursor: context-menu;
+}
+.blog-pagination .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+	cursor: none;
+}
+.blog-pagination .pagination > li > a, .pagination > li > span {
+	color: #fff;
+	float: none;
+	padding: 13px;
+	margin-right: 5px;
+	text-decoration: none;
+	background-color: transparent;
+	border: 1px solid #ddd;
+	cursor: pointer; 	
+}
+.blog-pagination .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+	color: #fff;
+	cursor: none;
+	 background-color: none;
+	border-color: #ddd;
+}
+.blog-pagination .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+	cursor: pointer;
+	background-color: transparent;
+	border-color: #ddd ;
+}
+.text-li {
+	font-size: 14px;
+	color: #fff;
+	margin-right: 5px;
+}
+
+/*
+==========================================
+blog-pagination css end
+==========================================
+*/
+
+/*
+==========================================
+next-page css start
+==========================================
+*/
+
+.next-page a {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: .3s;
+}
+.next-page a:hover {
+  color: #d6c6b2;
+}
+.next-page a i.fa {
+  margin-left: 10px;
+}
+/*
+==========================================
+next-page css end
+==========================================
+*/
+
+/*
+==========================================
+blog-part css end
+==========================================
+*/
+
+/*
+==========================================
+BLOG-GRID-VIEW CSS END
+==========================================
+*/
+
+/*
+==========================================
+BLOG-LIST-VIEW CSS START
+==========================================
+*/
+/*
+==========================================
+blog-area css start
+==========================================
+*/
+
+/*
+==========================================
+blog-left-section css start
+==========================================
+*/
+
+.padding-60 {
+	padding: 60px 0;
+}
+.margin-bottom-60 {
+	margin-bottom: 60px;
+}
+/*
+==========================================
+blog-left-section css end
+==========================================
+*/
+
+/*
+==========================================
+search-bar css start
+==========================================
+*/
+
+.search-bar {
+	margin-bottom: 60px;
+}
+input[type="search"] {
+	-webkit-appearance: none;
+	background-color: transparent;
+	border: 1px solid #999999;
+	color: #ddd;
+	font-size: 13px;
+	width: 100%;
+	padding: 10px;
+}
+/*
+==========================================
+search-bar css end
+==========================================
+*/
+
+/*
+==========================================
+categories area css start
+==========================================
+*/
+
+.catagories-section {
+	color: #fff;
+	margin-bottom: 60px;
+}
+.catagories-section h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.catagories-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.catagories-section li {
+  margin-bottom: 30px;
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 300;
+  transition: .3s;
+}
+.catagories-section li span.text-right {
+  float: right;
+}
+.catagories-section li:hover {
+  margin-left: 30px;
+  color: #d6c6b2;
+}
+/*
+==========================================
+categories area css end
+==========================================
+*/
+
+/*
+==========================================
+popular post css start
+==========================================
+*/
+
+.popular-post-section, .popular-post-section a {
+  color: #fff;
+}
+.popular-post-mainmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.popular-post-mainmenu li{
+  display: inline-block; 
+}
+.popular-post-mainmenu li a{
+
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  transition: .3s;
+  font-weight: 600;
+}
+.popular-post-mainmenu li a:hover {
+	color: #d6c6b2;
+}
+.popular-post-mainmenu {
+  margin-bottom: 30px;
+}
+
+.single-post {
+  display: inline-block;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.single-post:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.post-bg-1{background-image: url(../img/post-1.jpg)}
+.post-bg-2{background-image: url(../img/post-2.jpg)}
+.post-bg-3{background-image: url(../img/post-3.jpg)}
+.post-img {
+	height: 100px;
+	width: 100px;
+	background-size: cover;
+	background-position: center;
+	background-color: #ddd;
+	position: relative;
+	z-index: 1;
+	float: left;
+	margin-right: 30px;
+}
+.post-img::before {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	content: "\f0c1";
+	color: #333;
+	z-index: 2;
+	font-family: fontawesome;
+	height: 40px;
+	width: 40px;
+	margin-top: -20px;
+	text-align: center;
+	margin-left: -20px;
+	background: #444444;
+	line-height: 40px;
+	color: #d6c6b2;
+	border-radius: 50%;
+	font-size: 16px;
+	opacity: 0;
+	transition: .3s;
+	visibility: hidden;
+	transform: scale(2)
+}
+.post-img::after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: #d6c6b2;
+	opacity: 0;
+	transition: .3s;
+}
+.single-post:hover .post-img::before{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+.single-post:hover .post-img::after{
+	opacity: .8;
+}
+.single-post h4 {
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 48px;
+    transition: .3s;
+}
+.single-post h4:hover{
+	color: #d6c6b2;
+}
+.single-post span i.fa {
+	margin-right: 5px;
+}
+.single-post span{
+	color: #999999;
+}
+.single-post span.margin-right-10 {
+	margin-right: 5px;
+}
+/*
+==========================================
+popular post css end
+==========================================
+*/
+
+/*
+==========================================
+tags css start
+==========================================
+*/
+
+.tags-section, .tags-section a {
+  color: #fff;
+}
+.tags-section h4 {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+	margin-top: 60px;
+}
+.tags-labels {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tags-labels li {
+  display: inline-block;
+}
+.tags-labels li a {
+  color: #dddddd;
+  padding: 13px 10px;
+  border: 1px solid #ddd;
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*
+==========================================
+tags css end
+==========================================
+*/
+
+/*
+==========================================
+blog-area css end
+==========================================
+*/
+
+/*
+==========================================
+BLOG-LIST-VIEW CSS END
+==========================================
+*/
+
+
+/*
+==========================================
+BLOG-DETAILS-PAGE CSS START
+==========================================
+*/
+
+/*
+==========================================
+blog page css start
+==========================================
+*/
+
+.blog-details-page-area {
+	background: #333333;
+}
+/*
+==========================================
+blog details page area css start
+==========================================
+*/
+
+.blog-details-page-area, .blog-details-page-area a {
+  color: #ddd;
+  line-height: 1.8;
+}
+.blog-details {
+  padding: 30px;
+}
+.blog-details h3 {
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: #d6c6b2;
+  margin-bottom: 20px;
+}
+.blog-details-right-section {
+  float: right;
+}
+.blog-review a {
+  color: #999999;
+  display: inline-block;
+}
+.blog-review a i.fa {
+  margin-right: 5px;
+}
+.margin-right-30 {
+	margin-right: 30px;
+}
+.margin-left-15 {
+	margin-left: 15px;
+}
+.blog-review {
+	margin-bottom: 30px;
+}
+/*
+==========================================
+blog-special-section css start
+==========================================
+*/
+
+.blog-special-section {
+	background: #282828;
+	padding: 27px;
+	border-left: 3px solid #d6c6b2;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.blog-special-section p {
+	font-style: italic;
+}
+/*
+==========================================
+blog-special-section css end
+==========================================
+*/
+
+/*
+==========================================
+comments-section css start 
+==========================================
+*/
+
+.comments-section {
+  margin-top: 30px;
+}
+.comments-number h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border-bottom: 1px solid #999999;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+.sinlgle-man-comments img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 30px;
+}
+.sinlgle-man-comments h4 {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.sinlgle-man-comments h4 span.post-time {
+  float: right;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+}
+.top-comments {
+  border-bottom: 1px solid #999999;
+  margin-bottom: 30px;
+}
+.sinlgle-man-comments a {
+	display: inline-block;
+	color: #999999;
+}
+.sinlgle-man-comments a:hover{
+	color: #d6c6b2;
+}
+.margin-left-135 {
+  margin-left: 135px;
+}
+.sinlgle-man-comments p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  margin: 4px;
+}
+.sinlgle-man-comments {
+  margin-bottom: 20px;
+}
+/*
+==========================================
+comments-section css end 
+==========================================
+*/
+
+/*
+==========================================
+reply area css start
+==========================================
+*/
+
+.reply-area {
+  padding-top: 40px;
+}
+.reply-area h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+.padding-empty {
+	padding: 30px 0;
+}
+.large-text {
+	text-transform: uppercase;
+}
+.details-input {
+  width: 360px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+.details-right {
+  float: right;
+  margin-right: 0;
+}
+.block {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #d6c6b2;
+	color: #222;
+	padding: 10px 0;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+/*
+==========================================
+reply area css end
+==========================================
+*/
+
+/*
+==========================================
+blog details page area css start*
+==========================================
+/
+
+/*
+==========================================
+blog page css end
+==========================================
+*/
+
+
+/*
+==========================================
+BLOG-DETAILS-PAGE CSS END
+==========================================
+*/
+
+
+

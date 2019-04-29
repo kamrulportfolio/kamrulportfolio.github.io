@@ -1,0 +1,1309 @@
+/* Large device ( Desktop ): 1280px. */
+@media (max-width: 1199px) { 
+/******************** Portfolio homepage responsive start ********************/
+.main-menu ul li a {
+	padding: 10px;
+	padding-top: 60px;
+	padding-bottom: 10px;
+}
+	
+.single-slider-area img {
+	margin-left: 100px;
+}
+.slider-info h1 {
+	font-size: 85px;
+	position: relative;
+	z-index: 4;
+}
+.slider-info h2 {
+	font-size: 70px;
+}	
+.slider-info h4 {
+	position: relative;
+	z-index: 4;
+}	
+.slider-inner-text {
+	padding-right: 15%;
+}
+.about-img img {
+	height: 506px;
+}	
+.about-img .triangle-one {
+	top: 48px;
+}
+.about-img .triangle-one, .triangle-one::before, .triangle-one::after {
+	width: 20em;
+	height: 20em;
+}	
+.about-title h2 {
+	margin-bottom: 40px;
+}	
+.hire-me h3 {
+	margin-top: 40px;
+}	
+.single-portfolio-item {
+	margin-left: 24px;
+	margin-bottom: 24px;
+}		
+.team-des p {
+	padding-right: 20px;
+	font-size: 14px;
+}	
+.purchase-now-btn {
+	font-size: 14px;
+	padding: 12px 18px;
+}
+.sticky .blog-logo {
+	margin-top: 15px;
+}	
+.blog-meta {
+	max-width: 346px;
+}
+.blog-icon, .blog-icon a {
+	font-size: 12px;
+}	
+.blog-top-section {
+	margin-bottom: 15px;
+}
+.blog-meta h2 {
+	margin-bottom: 20px;
+	font-size: 17px;
+}
+.blog-bottom-section a {
+	font-size: 14px;
+}
+.blog-top-section-right a {
+	font-size: 12px;
+}	
+.blog-top-section-right {
+	margin-bottom: 15px;
+}	
+.blog-meta-right h2 {
+	margin-bottom: 20px;
+	font-size: 17px;
+}	
+.blog-bottom-section-right {
+	margin-top: 20px;
+}	
+.blog-bottom-section-right a {
+	font-size: 14px;
+}	
+.blog-bottom-section {
+	margin-top: 20px;
+}	
+.footer-title h4 {
+	margin-bottom: 25px;
+}
+.footer-social-area a {
+	font-size: 16px;
+}	
+.input-class {
+	width: 273px;
+}	
+	
+/******************** Portfolio homepage responsive end ********************/
+	
+/******************** blog details page responsive start ********************/
+.details-input {
+	width: 293px;
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+/******************** blog details page responsive end ********************/	
+	
+}
+/* Medium device ( Tablets ) : 768px. */
+@media (max-width: 991px) { 
+/******************** Portfolio homepage responsive start ********************/
+	
+.logo {
+	margin-top: 10px;
+} 
+.main-menu ul li a {
+	padding: 10px;
+	padding-top: 32px;
+	font-size: 14px;
+	padding-bottom: 3px;
+} 
+.single-slider-area img {
+	max-width: 530px;
+	margin-left: 85px;
+	height: 700px;
+}
+.slider-inner-text {
+	padding-right: 12%;
+}
+.slide-btn {
+	margin-left: 10px;
+}
+.slider-info h4 {
+	font-size: 15px;
+	position: relative;
+	z-index: 4;
+}
+.slider-info h1 {
+	font-size: 55px;
+	line-height: 44px;
+	position: relative;
+	z-index: 4;
+}	
+.slider-info h2 {
+	font-size: 35px;
+	line-height: 30px;
+}	
+.slide-btn {
+	font-size: 13px;
+	padding:10px;
+}
+.section-padding {
+	padding: 50px 0;
+}
+.about-img {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.about-text p {
+	font-size: 13px;
+}	
+.about-img img {
+	max-width: 300px;
+	clip-path: polygon(-4% 108%, 130% 54%, 19% -91%);
+	top: -7px;
+	height: 409px;
+}
+.about-img .triangle-one {
+	top: 57px;
+	left: 225px;
+}
+.about-img .triangle-one, .triangle-one::before, .triangle-one::after {
+	width: 15em;
+	height: 15em;
+}	
+.about-title h2 {
+	font-size: 25px;
+	margin-bottom: 15px;
+}	
+.hire-me h3 {
+	margin-top: 20px;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.section-title h2 {
+	font-size: 25px;
+}	
+.social-icon-section a {
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+}	
+.service-area-section .owl-nav div {
+	margin-right: 15px;
+}
+.only-for-desktop {
+	display: none;
+}
+.only-for-mobile {
+	display: block;
+}	
+.portfolio-mainmenu li {
+	margin-right: 15px;
+	display: inline-block;
+	margin-bottom: 20px;
+}	
+.single-portfolio-item:nth-child(1), .single-portfolio-item:nth-child(3) {
+	margin-left: 0;
+}	
+.portfolio-mainmenu li a:hover{
+	margin-left: 0;
+}	
+.single-portfolio-item {
+	width: 48%;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.portfolio-title h2 {
+	font-size: 25px;
+	margin-bottom: 20px;
+	line-height: 25px;
+}	
+.portfolio-bottom-info h4 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}	
+.portfolio-bottom-info span {
+	font-size: 14px;
+}	
+.portfolio-mainmenu li {
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 16px;
+}	
+.single-service-item {
+	text-align: center;
+	line-height: 1.9;
+	padding: 10px;
+}
+.single-service-item p {
+	font-size: 13px;
+}	
+.single-service-item h3 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}	
+.testimonial-title {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.testimonial-title h2 {
+	margin: 0;
+}
+.team-des p {
+	margin: 0;
+	padding-right: 15px;
+	font-size: 13px;
+}
+.testimonial-title {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}	
+.team-section .owl-nav div {
+	margin-right: 15px;
+}	
+.team-img img {
+	float: none;
+}
+.pricing-section-title {
+	margin-bottom: 30px;
+}	
+.pricing-section-title h2 {
+	margin: 0;
+}	
+.pricing-title {
+	padding: 15px;
+}
+.pricing-bottom-info {
+	padding: 0 20px;
+}
+.purchase-now-btn {
+	font-size: 13px;
+	padding: 10px 20px;
+}	
+.blog-meta {
+	max-width: 450px;
+	padding: 20px;
+}
+.blog-box-content {
+	padding: 30px;
+	height: 210px;
+}
+.section-title {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.input-class {
+	width: 325px;
+}
+.follow-me {
+	margin-top: 30px;
+}
+.footer-title h4 {
+	font-size: 18px;
+	margin-bottom: 30px;
+}	
+.footer-social-area a {
+	margin-bottom: 15px;
+	font-size: 18px;
+}	
+.follow-me h4 {
+	margin-bottom: 15px;
+}	
+.follow-me-icon {
+	margin-bottom: 15px;
+}	
+/******************** Portfolio homepage responsive end ********************/
+	
+/******************** blog list view responsive start ********************/
+.blog-logo {
+	margin-top: 10px;
+}
+.blog-main-menu ul li a {
+	padding: 15px;
+	padding-top: 35px;
+	font-size: 18px;
+}
+.blog-header-area {
+	height: 100px;
+}	
+.blog-top-area {
+	padding: 15px;
+	font-size: 16px;
+}	
+.blog-gray-area {
+	height: 80px;
+}
+.padding-60 {
+	padding: 50px 0;
+}	
+.margin-bottom-60 {
+	margin-bottom: 30px;
+}
+.blog-grid-view-section {
+	padding-bottom: 0;
+	padding-top: 0;
+}	
+.text-li {
+	font-size: 13px;
+}	
+.blog-pagination .pagination > li > a, .pagination > li > span {
+	padding: 10px;
+}	
+.next-page a {
+	font-size: 13px;
+}
+.search-bar {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}	
+.single-post {
+	width: 100%;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.single-post h4 {
+	margin-bottom: 20px;
+}	
+.tags-section {
+	margin-top: 20px;
+}	
+.tags-section h4 {
+	margin-bottom: 20px;
+}	
+
+.footer-top-area {
+	padding: 50px 0
+}	
+.follow-me-icon {
+	margin-bottom: 20px;
+}
+.sticky .logo {
+	margin-top: 10px;
+}
+	
+/******************** blog list view responsive end ********************/	
+/******************** blog details page responsive start ********************/	
+.details-input {
+	width: 345px;
+	margin-right: 0;
+}	
+/******************** blog details page responsive end ********************/	
+	
+}
+/* Small device ( Landscape Phone ): 576px. */
+@media (max-width: 767px) {
+/******************** Portfolio homepage responsive start ********************/
+.slicknav_btn.slicknav_collapsed {
+	padding: 0px;
+}
+.slicknav_menu {
+	margin-top: 4px;
+}
+.slider-inner-text {
+	text-align: center;
+	padding-right: 0;
+}	
+.slicknav_menutxt {
+	display: none !important;
+}
+.slide-btn {
+	margin-left: 10px;
+}	
+.about-img img {
+	height: 293px;
+}
+.about-img .triangle-one {
+	top: 57px;
+	left: 186px;
+}	
+.about-title h2 {
+	font-size: 25px;
+}	
+.hire-me h3 {
+	font-size: 18px;
+}	
+.section-title h2 {
+	font-size: 25px;
+}	
+.section-title {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}	
+.service-area-section .owl-nav div {
+	margin-right: 15px;
+}	
+.service-area {
+	padding-bottom: 30px;
+}
+.single-service-item h3 {
+	margin-bottom: 15px;
+}	
+.testimonial-title {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}	
+.single-portfolio-item {
+	width: 47%;
+	margin: 0 10px 10px;
+}
+.team-section .owl-nav {
+	margin-top: 40px;
+}
+.team-rating {
+	margin-bottom: 15px;
+}	
+.team-section .owl-nav div {
+	margin-right: 15px;
+}	
+.testimonial-area {
+	padding-bottom: 30px;
+}	
+.testimonial-title h2 {
+	font-size: 25px;
+	line-height: 25px;
+}	
+.section-padding {
+	padding: 30px 0;
+}
+.pricing-section-title {
+	margin-bottom: 30px;
+}	
+.pricing-section-title h2 {
+	font-size: 25px;
+	line-height: 25px;
+}	
+.section-title {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}	
+.section-title h2 {
+	font-size: 25px;
+}	
+.blog-area {
+	padding-bottom: 30px;
+}	
+.footer-top-area {
+	padding: 30px 0;
+}	
+.footer-title h4 {
+	font-size: 18px;
+	margin-bottom: 20px;
+	line-height: 18px;
+}	
+.follow-me h4 {
+	font-size: 18px;
+}	
+.contact-form h4 {
+	font-size: 18px;
+}	
+.main-menu {
+	display: none;
+}
+.responsive-menu-wrap {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.responsive-menu-wrap .slicknav_menu {
+  padding: 0;
+  background: none;
+  color: #fff;
+}
+.slicknav_btn.slicknav_open {
+	padding: 0px;
+}
+.mainmenu{
+  position: relative;
+  z-index: 9;
+}
+.slicknav_btn {
+  margin: 0;
+}
+.slicknav_menu .slicknav_icon {
+	width: 1.125em;
+	height: 0.875em;
+	margin: 10px;
+}
+.slicknav_nav li a {
+	padding: 7px;
+	font-size: 15px;
+}	
+.slicknav_menu .slicknav_menutxt {
+	font-size: 18px;
+}	
+.slicknav_nav {
+  width: 200px;
+  background-color: #d6c6b2; 
+  border-radius: 0px;
+}
+.slicknav_nav .slicknav_row, .slicknav_nav a {
+	 margin: 0;
+}	
+.slicknav_nav a:hover {
+	background: #333;
+    color: #fff;
+	border-radius: 0;
+}
+.slicknav_nav .slicknav_row:hover {
+	background: #d6c6b2;
+	color: #fff;
+}
+.logo {
+	margin-top: 20px;
+	max-width: 110px;
+}
+.logo img {
+	max-width: 110px;
+}	
+.homepage-slider-area {
+	height: 400px;
+}
+.homepage-slider-area div {
+	height: auto;
+}
+.single-slider-area img {
+	max-width: 100%;
+	margin-left: 0;
+	height: 420px;
+}
+.slider-info h4 {
+	font-size: 15px;
+}
+.slider-info h1 {
+	font-size: 55px;
+	line-height: 44px;
+}	
+.slider-info h2 {
+	font-size: 35px;
+	line-height: 30px;
+}	
+.slide-btn {
+	font-size: 13px;
+	padding:10px;
+}
+.section-padding {
+	padding: 30px 0;
+}
+.about-img {
+	margin-bottom: 20px;
+}
+.about-img img {
+	max-width: 215px;
+	clip-path: polygon(-4% 108%, 130% 54%, 19% -91%);
+	top: -5px;
+}
+.about-img .triangle-one, .triangle-one::before, .triangle-one::after {
+	width: 10em;
+	height: 10em;
+}	
+.about-title h2 {
+	font-size: 25px;
+	margin-bottom: 20px;
+}		
+.hire-me h3 {
+	margin-top: 20px;
+	font-size: 18px;
+}	
+.social-icon-section a {
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	margin-right: 10px;
+}	
+.social-icon-section a i::before {
+	font-size: 13px;
+}
+.only-for-desktop {
+	display: none;
+}
+.only-for-mobile {
+	display: block;
+}	
+.portfolio-title h2 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.portfolio-mainmenu li {
+	margin-bottom: 5px;
+	font-size: 12px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.portfolio-mainmenu {
+	margin-bottom: 15px;
+}		
+.portfolio-mainmenu li a:hover{
+	margin-left: 0;
+}	
+.portfolio-title h2 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.portfolio-mainmenu li {
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+.portfolio-bottom-info h4 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.portfolio-bottom-info span {
+	font-size: 11px;
+	font-weight: 600;
+}
+.browse-all {
+	font-size: 14px;
+	padding: 10px 15px;
+}	
+.team-img img {
+	float: none;
+	clip-path: polygon(11% 106%, 115% 66%, -4% -100%);
+	margin-bottom: 10px;
+	margin: 0 auto;
+}
+.team-img .triangle-three {
+	top: 38px;
+	left: 207px;
+}
+.team-info {
+	text-align: center;
+	margin-top: 10px;
+}	
+.team-des p {
+	padding-right: 0;
+}		
+.single-pricing-box {
+	margin-bottom: 20px;
+}
+.pricing-bottom-info {
+	padding: 0 20px;
+}
+.purchase-now-btn {
+	font-size: 13px;
+	padding: 10px 20px;
+}
+.blog-box-content {
+	padding: 10px;
+}
+.blog-image {
+	width: 100%;
+}	
+.blog-meta {
+	font-size: 12px;
+	padding: 10px;
+	max-width: 546px;
+	height: 220px;
+}	
+.blog-date h4{
+	margin-left: 261px;
+}
+
+.blog-box-content {
+	height: 201px;
+}
+.blog-right-section a {
+	margin-right: 0;
+}
+.blog-top-section {
+	margin-bottom: 20px;
+}
+.blog-meta h2 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}	
+.blog-meta p {
+	font-size: 13px;
+}
+.blog-bottom-section a {
+	font-size: 14px;
+}
+.blog-top-section-right {
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+.section-title {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}	
+.blog-meta-right h2 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+.blog-bottom-section-right a {
+	font-size: 14px;
+}
+.footer-social-area a {
+	font-size: 14px;
+	margin-bottom: 10px;
+}	
+.follow-me {
+	margin-top: 30px;
+}	
+.follow-me h4 {
+	margin-bottom: 10px;
+}	
+.follow-me-icon a {
+	height: 35px;
+	width: 35px;
+	font-size: 13px;
+	line-height: 35px;
+}
+.follow-me-icon {
+	margin-bottom: 10px;
+}	
+.contact-form {
+	padding: 20px;
+}
+.contact-form h4 {
+	font-size: 18px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	margin-bottom: 20px;
+}	
+.input-class {
+	width: 100%;
+	margin-right: 0;
+}
+.triangle-bottomright {
+	right: 36px;
+	top: 243px;
+}	
+.send-icon {
+	right: 52px;
+	top: 277px;
+}
+.footer-top-area {
+	padding-top: 50px;
+}	
+/******************** Portfolio homepage responsive start ********************/
+	
+/******************** blog list view responsive start ********************/
+.blog-main-menu{
+	display: none;
+}
+.blog-grid-area {
+	padding: 50px 0;
+}
+.responsive-menu-wrap {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.blog-header-area, .blog-header-area a{
+	font-size:20px;
+}
+.responsive-menu-wrap .slicknav_menu {
+	padding: 0;
+	background: none;
+	color: #fff;
+	padding-right: 10px;
+}
+.blog-main-menu {
+  position: relative;
+  z-index: 9;
+  color: #222;	
+}
+.slicknav_btn {
+  margin: 0;
+}
+.slicknav_nav a {
+	text-decoration: none;
+	color: #222;
+}	
+.slicknav_nav {
+	width: 200px;
+	background-color: #d6c6b2;
+	border-radius: 0px;
+	position: relative;
+	z-index: 99;
+}
+.slicknav_nav .slicknav_row, .slicknav_nav a {
+	 margin: 0;
+}	
+.slicknav_nav a:hover {
+	background: #333;
+    color: #fff;
+	border-radius: 0;
+}
+ .slicknav_nav .slicknav_row:hover {
+	background: #d6c6b2;
+	color: #fff;
+}	
+.header-area, .header-area a {
+	padding: 0px;
+}
+.sticky .logo img {
+	max-width: 120px;
+}
+.sticky .logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.blog-logo img {
+	max-width: 110px;
+}
+.sticky .blog-logo img {
+	max-width: 120px;
+}
+.blog-header-area.sticky {
+	height: 85px;
+}
+.blog-logo {
+	margin-top: 15px;
+}
+.blog-header-area {
+	height: 80px;
+}	
+.blog-top-area {
+	font-size: 12px;	
+	padding: 10px;
+}	
+.blog-top-left {
+	float: none;
+	text-align: center;
+}	
+.blog-top-right {
+	float: none;
+	text-align: center;
+}	
+.blog-gray-area {
+	height: 50px;
+}	
+.padding-60 {
+	padding: 30px 0;
+}	
+.margin-bottom-60 {
+	margin-bottom: 30px;
+}
+.single-blog-grid-view-box {
+	margin-bottom: 30px;
+}		
+.blog-date {
+	left: 240px;
+}		
+.text-li {
+	font-size: 12px;
+	margin-right: 3px;
+}	
+.blog-pagination .pagination > li > a, .pagination > li > span {
+	float: none;
+	padding: 5px;
+	margin-right: 2px;
+	font-size: 12px;
+}
+.next-page a {
+	display: block;
+	font-size: 12px;
+	margin-top: 0px;
+	text-align: center;
+}
+.search-bar {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}	
+.catagories-section {
+	margin-bottom: 30px;
+}	
+.catagories-section h4 {
+	margin-bottom: 30px;
+}	
+.catagories-section li {
+	margin-bottom: 20px;
+	font-size: 14px;
+}	
+.popular-post-mainmenu {
+	margin-bottom: 30px;
+}	
+.popular-post-mainmenu li a {
+	font-size: 16px;
+	margin-right: 20px;
+}	
+.single-post h4 {
+	font-size: 14px;
+	margin-bottom: 20px;
+}	
+.single-post span {
+	font-size: 12px;
+	display: block;
+}	
+.tags-section h4 {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}	
+.tags-labels li a {
+	padding: 10px 10px;
+	margin-right: 7px
+}	
+.footer-top-area {
+	padding-top: 50px;
+}	
+
+/******************** blog list view responsive end ********************/
+	
+/******************** blog details page responsive start ********************/
+.blog-details {
+	padding: 20px;
+}	
+.blog-details h3 {
+	font-size: 16px;
+	line-height: 1.5;
+}
+.blog-review {
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+.blog-details-right-section {
+	float: none;
+}
+.blog-details p {
+	font-size: 13px;
+}	
+.blog-special-section {
+	padding: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}	
+.comments-section {
+	margin-top: 0;
+}	
+.comments-number h4 {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+.margin-left-135 {
+	margin-left: 105px;
+}
+.sinlgle-man-comments img {
+	float: left;
+	margin-right: 24px;
+	margin-bottom: 10px;
+}
+.sinlgle-man-comments p {
+	font-size: 13px;
+}	
+.sinlgle-man-comments h4 span.post-time {
+	float: none;
+	font-size: 10px;
+}	
+.details-input {
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 10px;
+}		
+
+/******************** blog details page responsive end ********************/
+}
+/* Extra Small device ( Portrait phones ): 320px. */
+@media (max-width: 575px) { 
+/******************** Portfolio homepage responsive start ********************/
+
+.single-slider-area img {
+	width: 320px;
+	height: 400px;
+	left: 50%;
+	margin-left: -160px;
+}
+.slider-inner-text {
+	padding-right: 0;
+}
+.homepage-slider-area {
+	height: 400px;
+}
+.homepage-slider-area div {
+	height: auto;
+}
+.slider-inner-text {
+	padding-right: 8%;
+}	
+.slide-btn {
+	margin-left: 10px;
+}	
+.about-img img {
+	max-width: 215px;
+	clip-path: polygon(-4% 108%, 130% 54%, 19% -91%);
+	top: -5px;
+}	
+.about-img img {
+	left: 0%;
+}
+.about-img .triangle-one {
+	top: 64px;
+	left: 45px;
+}
+.about-title h2 {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.hire-me h3 {
+	margin-top: 20px;
+	font-size: 18px;
+	margin-bottom: 20px;
+}	
+.section-title {
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+.section-title h2 {
+	font-size: 25px;
+	margin: 0;
+}	
+.single-service-item h3 {
+	font-size: 18px;
+}	
+.service-area {
+	padding-bottom: 50px;
+}	
+.service-area-section .owl-nav div {
+	margin-right: 15px;
+}	
+.blog-header-area {
+	height: 70px;
+}
+.section-padding {
+	padding: 50px 0;
+}
+.only-for-desktop {
+	display: none;
+}
+.only-for-mobile {
+	display: block;
+}
+.portfolio-title h2 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}	
+.portfolio-mainmenu li {
+	margin-right: 15px;
+	font-size: 14px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.portfolio-mainmenu li a:hover{
+	margin-left: 0;
+}	
+.portfolio-mainmenu {
+	margin-bottom: 20px;
+}	
+.single-portfolio-item {
+	width: 100%;
+	margin-left: 0;
+}	
+.single-portfolio-item img {
+	width: 100%;
+}	
+.portfolio-bottom-info h4 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.portfolio-bottom-info span {
+	font-size: 14px;
+}	
+.testimonial-title {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}	
+.testimonial-title h2 {
+	font-size: 25px;
+	line-height: 25px;
+}	
+.testimonial-area {
+	padding-bottom: 50px;
+}
+.team-section .owl-nav div {
+	margin-right: 15px;
+}	
+.team-img .triangle-three {
+	top: 37px;
+	left: 78px;
+}
+.team-img img {
+	float: none;
+	margin: 0 auto;
+}
+.team-info {
+	text-align: center;
+	margin-top: 10px;
+}
+.team-des p {
+	font-size: 14px;
+}	
+.team-section .owl-nav {
+	margin-top: 40px;
+}	
+.pricing-icon .triangle-four {
+	top: 97px;
+	left: 43%;
+}	
+.pricing-section-title {
+	margin-bottom: 30px;
+}	
+.pricing-section-title h2 {
+	font-size: 25px;
+}
+.single-blog-grid-view-box {
+	margin-bottom: 30px;
+}	
+.blog-image {
+	width: 100%;
+}	
+.blog-date {
+	left: auto;
+	right: 32px;
+}
+.blog-meta {
+	float: left;
+	max-width: 640px;
+	height: 260px;
+}
+.blog-meta h2 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}	
+.blog-bottom-section {
+	margin-top: 15px;
+}
+.blog-grid-area {
+	padding: 40px 0;
+}
+.blog-box-content {
+	height: 238px;
+}
+.blog-meta-right h2 {
+	font-size: 16px;
+	margin-bottom: 6px;
+}
+.blog-grid-box-bg {
+	height: 300px;
+}
+.blog-bottom-section-right {
+	margin-top: 20px;
+}
+.next-page a {
+	margin-top: 34px;
+}
+.next-page a {
+	font-size: 9px;
+}
+.next-page a i.fa {
+	margin-left: 5px;
+}
+.blog-grid-view-date h4 {
+	font-size: 20px;
+}
+.blog-logo {
+	margin-top: 10px;
+}
+.sticky .blog-logo {
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+.sticky .blog-logo img {
+	max-width: 120px;
+}
+.blog-header-area.sticky {
+	height: 85px;
+}
+.slicknav_menu .slicknav_menutxt {
+	font-size: 18px;
+}
+.slicknav_btn.slicknav_collapsed {
+	padding: 0;
+}
+.slicknav_btn.slicknav_open {
+	padding: 0;
+}
+.pagination > li {
+	display: inline-block;
+	margin: 8px 1px;
+}
+.blog-top-section-right {
+	margin-bottom: 10px;
+}
+.blog-area {
+	padding-bottom: 50px;
+}	
+.single-post span {
+	font-size: 12px;
+	display: inline-block;
+}	
+.single-post {
+	width: 100%;
+}
+.text-right {
+	float: right;
+	margin-top: -20px;
+}	
+.footer-top-area {
+	padding: 50px 0;
+	text-align: center;
+}
+.footer-left-section-area {
+	text-align: center;
+}	
+.footer-title h4 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	line-height: 20px;
+}	
+.follow-me {
+	margin-top: 20px;
+}	
+.follow-me h4 {
+	margin-bottom: 10px;
+}	
+.follow-me-icon {
+	margin-bottom: 20px;
+}	
+.input-class {
+	width: 100%;
+}	
+.triangle-bottomright {
+	right: 36px;
+	top: 243px;
+}	
+.send-icon {
+	right: 52px;
+	top: 277px;
+}	
+.header-area, .header-area a {
+	padding: 0px;
+}
+.slicknav_menu .slicknav_icon {
+	margin: 10px;
+}
+.sticky .logo img {
+	max-width: 120px;
+}
+.slicknav_menu {
+	margin-top: 4px;
+}
+.sticky .logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.sinlgle-man-comments img {
+	float: none;
+	margin-right: 0px;
+	margin-bottom: 5px;
+}
+.sinlgle-man-comments h4 {
+	margin-bottom: 5px;
+}
+.margin-left-135 {
+	margin-left: 0px;
+}
+/******************** Portfolio homepage responsive end ********************/
+	
+}
